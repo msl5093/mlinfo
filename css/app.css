@@ -1,3 +1,5 @@
+/* #7ff8d2 */
+
 html {
     box-sizing: border-box;
 }
@@ -59,6 +61,12 @@ a {
            order: 3;
 }
 
+main,
+aside {
+    border: solid .5px;
+    border-color: #000022;
+}
+
 header {
     border-bottom: solid .75px;
     border-color: #000022;
@@ -68,6 +76,7 @@ header h1 {
     letter-spacing: -4px;
     font-weight: 300;
     font-family: 'Inconsolata', 'Courier New', monospace;
+    margin-left: -2px;
 }
 
 footer {
