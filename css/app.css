@@ -1,4 +1,10 @@
-/* #7ff8d2 */
+/*
+    neon green - #65f87e
+    seafoam - #7ff8d2
+    really light-blue tealy thing - #84e1ff
+    sublime text bkgrnd - #00303e
+*/
+
 
 html {
     box-sizing: border-box;
@@ -9,7 +15,7 @@ html {
 }
 
 body {
-    background: #fafafa;
+    background: #fff;
     margin: 0;
 }
 
@@ -33,12 +39,11 @@ a {
    padding: 0;
    display: -webkit-flex;
    display: flex;
-   -webkit-flex-flow: row;
-   flex-flow: row;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
 }
 
-#container > nav,
-#container > aside {
+#container > nav {
    margin: 4px;
    padding: 1em;
 }
@@ -50,8 +55,7 @@ a {
            order: 2;
 }
 
-#container > nav,
-#container > aside {
+#container > nav {
    -webkit-flex: 1 6 0;
            flex: 1 6 0;
 }
@@ -59,11 +63,6 @@ a {
 #container > nav {
    -webkit-order: 1;
            order: 1;
-}
-  
-#container > aside {
-   -webkit-order: 3;
-           order: 3;
 }
 
 nav a {
@@ -76,46 +75,148 @@ nav a {
 
 nav a:focus,
 nav a:hover {
-    color: #fafafa; 
+    color: #fff; 
     background-color: #000022;
     border-bottom: none;
 }
 
-aside {
-    border: solid .5px;
-    border-color: #000022;
-}
-
 main {
-    border: solid .5px;
-    border-color: #000022;
+    /*border: solid 1px;
+    border-color: #000022;*/
     margin: 130px 10px 0 0;
     padding: 1em;
 }
 
 main p {
     color: #000022;
-    font-family: 'Inconsolata', 'Courier New', monospace;
-    font-size: 0.85em;
+    font-family: 'Source Code Pro', 'Courier New', monospace;
+    font-size: 1.25em;
     margin-top: -12px;
+    letter-spacing: 0.25px;
 }
 
 main h4 {
-    font-size: 2em;
-    margin: -10px 0 -10px -100px;
+    font-size: 2.25em;
+    margin: -10px 0 -20px -70px;
     color: #0020ff;
 }
+
+
+.cursor {
+  font-weight: 100;
+  font-size: 1em;
+  color: #000022;
+  /*-webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;*/
+  margin-left: -5px;
+}
+
+/*@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #000022;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #000022;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #000022;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #000022;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #000022;
+  }
+}*/
+
 
 header h1 {
     letter-spacing: -4px;
     font-weight: 300;
-    font-family: 'Inconsolata', 'Courier New', monospace;
+    font-family: 'Source Code Pro', 'Courier New', monospace;
     margin-left: 0;
-    margin-bottom: -10px;
+    margin-bottom: -6px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid .col {
+    flex: 1;
+    width: 32%;
+}
+
+.grid .single-col {
+    flex: 1;
+    width: 100%;
+}
+
+/* for technicolor dropshadow effect - this could be better */
+.single-col h3 {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000022;
+    opacity: 0.85;
+    letter-spacing: 2.25px;
+    font-weight: 700;
+}
+
+.single-col .h3-red,
+.single-col .h3-green {
+    margin-top: -40px;
+    margin-left: 5px;
+}
+
+.single-col .h3-red {
+    color: #fc0dff;
+    opacity: 0.2;
+}
+
+.single-col .h3-green {
+    color: #08fff2;
+    opacity: 0.2;
+}
+/**************************************************************************/
+
+.single-col .solid-black {
+    background: #000022;
+    height: 200px;
 }
 
 footer {
-    position: fixed;
     bottom: 0;
     border-top: solid .5px;
     border-color: #000022;
