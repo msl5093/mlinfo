@@ -3,6 +3,7 @@
     seafoam - #7ff8d2
     really light-blue tealy thing - #84e1ff
     sublime text bkgrnd - #00303e
+    technicolor effect: any black (opacity 0.85), #fc0dff, #08fff2 - set opacity to 0.2 for those
 */
 
 
@@ -177,6 +178,13 @@ header h1 {
 .grid .col {
     flex: 1;
     width: 32%;
+    height: 125px;
+    background: #000;
+}
+
+.grid .col p {
+    color: #fff;
+    padding: 1px;
 }
 
 .grid .single-col {
@@ -211,9 +219,17 @@ header h1 {
 }
 /**************************************************************************/
 
-.single-col .solid-black {
-    background: #000022;
-    height: 200px;
+.big-left-hand-h2,
+.big-right-hand-h2 {
+    font-size: 4em;
+}
+
+.big-right-hand-h2 {
+    margin-left: -185px;
+}
+
+.big-left-hand-h2 {
+    margin-left: 180px;
 }
 
 footer {
